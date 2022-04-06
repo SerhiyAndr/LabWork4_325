@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form bassed on lesson materials</title>
+    <style type="text/css">
+        .main {
+            position: absolute;
+            background-color: white;
+            width: 500px;
+            min-height: 150px;
+            left: 150px;
+            top: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color:wheat;
+        }
+        input {
+            float: right;
+            width: 280px;
+        }
+        .fieldset {
+            border: none;
+            border-top: 1px solid gray;
+           
+        }
+        .State {
+            float: right;
+            width: 290px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form method="get" action="Andrienko_Lab4_Task7.html" enctype="text/plain" autocomplete="on">
+            <fieldset class="fieldset">
+                <legend style="color:blue">Personal information</legend>
+                <div>
+                    <br />
+                    <span style="color:black"><b>First name:</b></span>
+                    <input type="text" name="First name" title="Enter First name" maxlength="50" size="50" />
+                    <br />
+                </div>
+                <div>
+                    <br />
+                    <span>Middle name:</span>
+                    <input type="text" name="Middle name" title="Enter Middle name" maxlength="50" size="50" />
+                    <br />
+                </div>
+                <div>
+                    <br />
+                    <span style="color:black"><b>Last Name:</b></span>
+                    <input type="text" name="Last name" title="Enter Last name" maxlength="50" size="50" />
+                    <br />
+                </div>
+                <br />
+                <br />
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend style="color:blue"> Adress</legend>
+                <div>
+                    <br />
+                    <span> Adress:</span>
+                    <input type="text" name="Adress" title="Enter  adress" maxlength="50" size="50" />
+                    <br />
+                </div>
+                <div>
+                    <br />
+                    <span>Сity or Town:</span>
+                    <input type="text" name="Сity or Town" title="Choose a city or town " maxlength="50" size="50" />
+                    <br />
+                </div>
+                <div>
+                    <br />
+                    <span>State:</span>
+                    <select class="State" name="state">
+                        <option value="Poland">Poland</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <div>
+                    <br />
+                    <span style="color:black"><b>Zip code:</b></span>
+                    <input type="text" name="Zip code" title="Enter  zip code" maxlength="50" size="50" />
+                    <br />
+                </div>
+                <br />
+                <input type="submit" name="submit" value="Enter" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
